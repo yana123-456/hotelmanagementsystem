@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="housekeeping.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/7d4482d100.js" crossorigin="anonymous"></script>
+    <title>House Keeping</title>
+</head>
+<body>
+    <nav class = "navbar navbar-inverse navbar-fixed-top">
+        <div class = "container-fluid">
+            <div class = "navbar-header">
+                <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#myNavbar">
+                </button>
+                </div>
+                <div class = "collapse navbar-collapse" id = "myNavbar">
+          <ul class = "nav navbar-nav">
+            <li class = "nav-item"><a href = "home.html" target = "blank">Home</a></li>
+            <li class = "nav-item"><a href = "about.html" target = "blank">About</a></li>
+            <li class = "nav-item"><a href = "services.html" target = "blank">Services</a></li>
+            <li class = "nav-item"><a href = "rooms.html" target = "blank">Rooms</a></li>
+            <li class = "nav-item"><a href = "feedbacks.html" target = "blank">Feedbacks</a></li>
+          </ul> 
+             <ul class = "nav navbar-nav navbar-right">
+                <li class = "nav-item"><a href = "signup.php" target = "blank"><span class = "glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li class = "nav-item"><a href = "login.php" target = "blank"><span class = "glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div>
+            </div>
+        </nav>
+        <div class="mySlides fade">
+            <img src="4.png" style="width:100%">
+            </div>
+          <div class="mySlides fade">
+            <img src="5.png" style="width:100%">
+            </div>
+          <div class="mySlides fade">
+          <img src="9.png" style="width:100%">
+          </div>
+          </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            </div>
+          
+        <footer class = "footer">
+          <div class = "footer-container">
+              <div>
+                  <h1><strong>About Us</strong></h1>
+                  <p>The Clarks Grand Hotel is a majestic sanctuary with spacious hotel rooms that integrate 
+                      contemporary and traditional touches. Dining is an entirely exquisite journey of flavours
+                       at the Hotel. Rejuvenating treatments at the spa invigorate tranquility. A missive 
+                       swimming pool at the property is a perfect escape from the rush of the bustling city. 
+                       Host unforgettable moments and successful meet-ups at the business centre. We have the 
+                       expertise to manage world-class corporate events with computers, printers, and other 
+                       office facilities in place.</p>
+                  <ul class = "social-icons">
+                      <li class = "flex">
+                          <i class = "fa fa-twitter fa-2x"></i>
+                      </li>
+                      <li class = "flex">
+                          <i class = "fa fa-facebook fa-2x"></i>
+                      </li>
+                      <li class = "flex">
+                          <i class = "fa fa-instagram fa-2x"></i>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h1><strong>Useful links</strong></h1>
+                  <a href = "#">Blog</a>
+                  <a href = "#">Rooms</a>
+                  <a href = "#">Subscription</a>
+                  <a href = "#">Gift Card</a>
+              </div>
+              <div>
+                  <h1>Privacy</h1>
+                  <a href = "#">Career</a>
+                  <a href = "#">About Us</a>
+                  <a href = "#">Contact Us</a>
+                  <a href = "#">Services</a>
+              </div>
+              <div>
+                  <h1><strong>Have A Question</strong></h1>
+                  <div class = "contact-item">
+                      <span>
+                          <i class = "fas fa-map-marker-alt"></i>
+                      </span>
+                      <span>
+                         Golghar Gorakhpur UP
+                      </span>
+                  </div>
+                  <div class = "contact-item">
+                      <span>
+                          <i class = "fas fa-phone-alt"></i>
+                      </span>
+                      <span>
+                          (+91)1234567890
+                      </span>
+                  </div>
+                  <div class = "contact-item">
+                      <span>
+                          <i class = "fas fa-envelope"></i>
+                      </span>
+                      <span>
+                          info@theclarksgrand.com
+                      </span>
+                  </div>
+              </div>
+          </div>
+      </footer>
+     <div class="hashtag">
+              <h1>#ClarksGrandWithUs</h1>
+          </div>
+          <script>
+            var slideIndex = 0;
+            showSlides();
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000);
+            }
+            </script>
+    </body>
+    </html>
+        
